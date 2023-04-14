@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/pdc-website/static/css/main.31d6cfe0.css",
+    "main.js": "/pdc-website/static/js/main.b9904543.js",
+    "index.html": "/pdc-website/index.html",
+    "main.b9904543.js.map": "/pdc-website/static/js/main.b9904543.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.b9904543.js"
+  ]
+}
