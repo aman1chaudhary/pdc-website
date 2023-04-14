@@ -2,7 +2,13 @@ import React from 'react'
 
 const PlacementMaterials = () => {
   return (
-    <div>PlacementMaterials</div>
+    <div>
+      <header id="page-header">
+        <div className="page-heading">
+          <h2>Placement Materials</h2>
+        </div>
+      </header>
+    </div>
   )
 }
 

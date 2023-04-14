@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
+
+
   return (
-    <div>Home</div>
+    <div className='main-container'>
+      <Helmet>
+        <title>PDC | IIT Gandhinagar</title>
+        <meta name="description" content="" />
+
+      </Helmet>
+
+
+      <header id="head">
+        <div className="banner-content">
+          <h1>Professional Development Council</h1>
+        </div>
+      </header>
+
+    </div>
   )
 }
 
