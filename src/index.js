@@ -4,7 +4,6 @@ import './index.css';
 import './responsive.css';
 import App from './App';
 import { GoogleOAuthProvider } from '@react-oauth/google';
-import Appp from './Appp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
