@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Preloader from './components/Preloader';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
@@ -7,7 +7,14 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import About from './pages/About';
 import Events from './pages/Events';
+import CurrentTeam from './pages/CurrentTeam';
+import PastTeam from './pages/PastTeam';
+import Clubs from './pages/Clubs';
 import PlacementMaterials from './pages/PlacementMaterials';
+import PlacementTalksVideos from './pages/PlacementTalksVideos';
+import Blogs from './pages/Blogs';
+import EventsDetails from './pages/EventsDetails';
+import BlogsDetails from './pages/BlogsDetails';
 
 const App = () => {
   return (
@@ -19,7 +26,14 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/events" element={<Events />} />     
+        <Route path="/team" element={<CurrentTeam />} />     
+        <Route path="/team/past-team" element={<PastTeam />} />     
         <Route path="/material" element={<PlacementMaterials />} />     
+        <Route path="/clubs" element={<Clubs />} />     
+        <Route path="/material/placement-talks" element={<PlacementTalksVideos />} />     
+        <Route path="/material/blogs" element={<Blogs />} />  
+        <Route path="/events/:EventName" element={<EventsDetails />} />   
+        <Route path="/material/blogs/:BlogTitle" element={<BlogsDetails />} />   
         </Routes>
       <Footer />
     </Router>

@@ -1,0 +1,53 @@
+@media (min-width: 1600px) {}
+
+@media (max-width: 991px) {}
+
+
+
+@media (max-width: 767px) {
+
+    .banner-content h1 {
+        font-size: 44px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    #page-header {
+        height: 30vh;
+    }
+
+    .page-heading {
+        margin: 5vw;
+
+
+    }
+
+    .page-heading h2 {
+        font-size: 34px;
+    }
+    .section-button{
+        padding: 5px;
+        font-size: 16px;
+      }
+    
+
+    
+
+
+}
+
+
+
+
+
+@media (max-width: 500px) {}
+
+
+
+@media (max-width: 380px) {}

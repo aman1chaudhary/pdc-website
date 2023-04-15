@@ -1,62 +1,66 @@
 import React from 'react'
 import "./Footer.css"
+import { Link } from "react-router-dom";
+import logo from "../assets/images/IITGN Logo-Trans.png"
+
 const Footer = () => {
   return (
     <div>
-      <footer class="footer-section">
-        <div class="container">
-          <div class="footer-cta pt-5 ">
-
+      <footer className="footer-section">
+        <div className="container">
+          <div className="footer-cta pt-5 ">
+            
           </div>
-          <div class="footer-content pt-5 pb-1">
-            <div class="row">
-              <div class="col-xl-4 col-lg-4 mb-50">
-                <div class="footer-widget">
-
-                  <div class="footer-text">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          <div className="footer-content pt-5 pb-1">
+            <div className="row">
+              <div className="col-xl-4 col-lg-4 mb-50">
+                <div className="footer-widget">
+                  <div className="footer-logo">
+                    <a href="index.html"><img src={logo} className="img-fluid" alt="logo" /></a>
                   </div>
-                  <div class="footer-social-icon">
+                  <div className="footer-text">
+                    <p>The Professional Development Council (PDC) is dedicated to providing the student body with a structured framework for their overall professional development. We aim to spread awareness about the importance of professional development and create avenues for students to enhance their skills and knowledge in various areas. </p>
+                  </div>
+                  <div className="footer-social-icon">
                     <span>Follow us</span>
-                    <ul class="social_icon">
-                      <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                      <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <ul className="social_icon">
+                      <li><a href="https://www.instagram.com/"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.instagram.com/"><i className="fab fa-twitter"></i></a></li>
+                      <li><a href="https://www.instagram.com/"><i className="fab fa-youtube"></i></a></li>
+                      <li><a href="https://www.instagram.com/"><i className="fab fa-linkedin"></i></a></li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                <div class="footer-widget">
-                  <div class="footer-widget-heading">
+              <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
+                <div className="footer-widget">
+                  <div className="footer-widget-heading">
                     <h3>Useful Links</h3>
                   </div>
                   <ul>
-                    <li><a href="#">Our Team</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Our Gallery</a></li>
-                    <li><a href="#">Selection Process</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Sponsorship</a></li>
-                    <li><a href="#">Our Policies</a></li>
-                    <li><a href="#">Our Team</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><Link to="/" onClick={() => window.scrollTo(0, 0)}>Home</Link></li>
+                    <li><Link to="/about" onClick={() => window.scrollTo(0, 0)}>About Us</Link></li>
+                    <li><Link to="/events" onClick={() => window.scrollTo(0, 0)}>Events</Link></li>
+                    <li><Link to="/material/placement-talks" onClick={() => window.scrollTo(0, 0)}>Placement Talks Videos</Link></li>
+                    <li><Link to="/material/blogs" onClick={() => window.scrollTo(0, 0)}>Blogs</Link></li>
+                    <li><Link to="/clubs" onClick={() => window.scrollTo(0, 0)}>Clubs</Link></li>
+                    <li><Link to="/team" onClick={() => window.scrollTo(0, 0)}>Our Team</Link></li>
+                    <li><Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Contact us</Link></li>
                   </ul>
                 </div>
               </div>
-              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                <div class="footer-widget">
-                  <div class="footer-widget-heading">
+              <div className="col-xl-4 col-lg-4 col-md-6 mb-50">
+                <div className="footer-widget">
+                  <div className="footer-widget-heading">
                     <h3>Subscribe</h3>
                   </div>
-                  <div class="footer-text mb-25">
+                  <div className="footer-text mb-25">
                     <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
                   </div>
-                  <div class="subscribe-form">
+                  <div className="subscribe-form">
                     <form action="#">
                       <input type="text" placeholder="Email Address" />
-                      <button><i class="fab fa-telegram-plane"></i></button>
+                      <button><i className="fab fa-telegram-plane"></i></button>
                     </form>
                   </div>
                 </div>
@@ -64,22 +68,22 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="copyright-area">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                <div class="copyright-text">
-                  <p>Copyright &copy; 2023, All Right Reserved <a href="#">Professional Development Council, IIT Gandhinagar</a></p>
+        <div className="copyright-area">
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-6 col-lg-6 text-center text-lg-left">
+                <div className="copyright-text">
+                  <p>Copyright &copy; 2023, All Right Reserved <Link to="/" onClick={() => window.scrollTo(0, 0)}>Professional Development Council</Link></p>
                 </div>
               </div>
-              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                <div class="footer-menu">
+              <div className="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                <div className="footer-menu">
                   <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Policy</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><Link to="/" onClick={() => window.scrollTo(0, 0)}>Home</Link></li>
+                    <li><Link to="/" onClick={() => window.scrollTo(0, 0)}>Terms</Link></li>
+                    <li><Link to="/" onClick={() => window.scrollTo(0, 0)}>Privacy</Link></li>
+                    <li><Link to="/" onClick={() => window.scrollTo(0, 0)}>Policy</Link></li>
+                    <li><Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Contact</Link></li>
                   </ul>
                 </div>
               </div>
