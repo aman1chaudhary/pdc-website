@@ -3,7 +3,7 @@ export const TeamData = [
         "id": 1,
         "name": "Dhvani Shah",
         "position": "Secretary",
-        "bio": "Dhvani Shah is a Final-year Undergraduate student in the Department of Mechanical Engineering. She leads the PDC and CDS student teams responsible for fetching placement and internship opportunities for students and preparing students for their respective careers. Since her first year, she has actively worked in the CDS Team and PDC Council.",
+        "bio": "Dhvani Shah is a Final-year Undergraduate student in the Department of Mechanical Engineering. She leads the PDC and CDS student teams responsible for fetching placement and internship opportunities for students and preparing students for their respective careers.",
         "image": "https://www.9degreedesignstudio.com/wp-content/uploads/2020/09/team4.jpg",
         "email":"example@iitgn.ac.in" 
       },

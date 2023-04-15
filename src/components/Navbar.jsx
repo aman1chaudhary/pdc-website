@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
+import { googleLogout, useGoogleLogin } from '@react-oauth/google';
+import axios from 'axios';
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import Logo from "../assets/images/logo.png"
-
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -10,6 +11,49 @@ const Navbar = () => {
     window.scrollTo(0, 0);
     setClick(!click);
   };
+
+  // Load the profile state from localStorage on component mount
+  useEffect(() => {
+    const storedProfile = localStorage.getItem('profile');
+    if (storedProfile) {
+      setProfile(JSON.parse(storedProfile));
+    }
+  }, []);
+
+  const [user, setUser] = useState([]);
+  const [profile, setProfile] = useState();
+
+  const login = useGoogleLogin({
+    onSuccess: (codeResponse) => setUser(codeResponse),
+    onError: (error) => console.log('Login Failed:', error)
+  });
+
+  useEffect(() => {
+    if (user) {
+      axios
+        .get(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`, {
+          headers: {
+            Authorization: `Bearer ${user.access_token}`,
+            Accept: 'application/json'
+          }
+        })
+        .then((res) => {
+          setProfile(res.data);
+          // Store the profile state in localStorage
+          localStorage.setItem('profile', JSON.stringify(res.data));
+        })
+        .catch((err) => console.log(err));
+    }
+  }, [user]);
+
+  const logOut = () => {
+    googleLogout();
+    setProfile(null);
+    // Remove the profile state from localStorage
+    localStorage.removeItem('profile');
+  };
+
+
   return (
     <>
       <div className="navbar">
@@ -67,28 +111,30 @@ const Navbar = () => {
           </li>
 
 
-          <li>
-            <div className="nav-item">
-              <button className="nav-dropbtn">
-                <NavLink to="/material" className="nav-links" onClick={handleClick}>
-                  Material <i className="fa fa-angle-down" aria-hidden="true"></i>
-                </NavLink>
-              </button>
-              <div className="dropdown-content">
-                <NavLink to="/material/prep-mat" className="drop-nav-links" onClick={handleClick} >
-                PrepMat
-                </NavLink>
-                <NavLink to="/material/blogs" className="drop-nav-links" onClick={handleClick} >
-                  Blogs
-                </NavLink>
+          {profile && (
+            <li>
+              <div className="nav-item">
+                <button className="nav-dropbtn">
+                  <NavLink to="/material" className="nav-links" onClick={handleClick}>
+                    Material <i className="fa fa-angle-down" aria-hidden="true"></i>
+                  </NavLink>
+                </button>
+                <div className="dropdown-content">
+                  <NavLink to="/material/prep-mat" className="drop-nav-links" onClick={handleClick} >
+                    PrepMat
+                  </NavLink>
+                  <NavLink to="/material/blogs" className="drop-nav-links" onClick={handleClick} >
+                    Blogs
+                  </NavLink>
 
-                <NavLink to="/material/placement-talks" className="drop-nav-links" onClick={handleClick}>
-                  Placement Talks Videos
-                </NavLink>
+                  <NavLink to="/material/placement-talks" className="drop-nav-links" onClick={handleClick}>
+                    Placement Talks Videos
+                  </NavLink>
 
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
+          )}
 
 
 
@@ -105,13 +151,27 @@ const Navbar = () => {
           </li>
 
 
-              <li className="nav-item">
-                <button className="login-btn">Log In</button>
-              </li>
+          <li className="nav-item">
+            {profile ? (
+              <div className='profile-img'>
+                <img src={profile.picture} alt="user image" onClick={logOut} />
+                <div className="profile-data">
+                  <p>Name: {profile.name}</p>
+                  <p>Email: {profile.email}</p>
+
+
+                </div>
+
+              </div>
+            ) : (
+              <button className="login-btn" onClick={() => login()}>Login In </button>
+            )}
+          </li>
 
 
 
-          
+
+
 
         </ul>
 
