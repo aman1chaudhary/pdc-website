@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/pdc-website/static/css/main.5ee59a30.css",
-    "main.js": "/pdc-website/static/js/main.85ac1026.js",
+    "main.css": "/pdc-website/static/css/main.4e323b56.css",
+    "main.js": "/pdc-website/static/js/main.f23eba0d.js",
     "static/media/IITGN Logo-Trans.png": "/pdc-website/static/media/IITGN Logo-Trans.9c62fff84e29bc293a33.png",
     "static/media/banner-2.jpg": "/pdc-website/static/media/banner-2.c66edc8a6b8b6b1bd4b3.jpg",
     "static/media/empty.gif": "/pdc-website/static/media/empty.892e3c962daac6591a52.gif",
     "static/media/logo.png": "/pdc-website/static/media/logo.a0fff9bafa0d43cb1612.png",
     "static/media/banner.jpg": "/pdc-website/static/media/banner.4d41cdabcae317284099.jpg",
     "index.html": "/pdc-website/index.html",
-    "main.5ee59a30.css.map": "/pdc-website/static/css/main.5ee59a30.css.map",
-    "main.85ac1026.js.map": "/pdc-website/static/js/main.85ac1026.js.map"
+    "main.4e323b56.css.map": "/pdc-website/static/css/main.4e323b56.css.map",
+    "main.f23eba0d.js.map": "/pdc-website/static/js/main.f23eba0d.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ee59a30.css",
-    "static/js/main.85ac1026.js"
+    "static/css/main.4e323b56.css",
+    "static/js/main.f23eba0d.js"
   ]
 }

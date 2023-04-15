@@ -70,7 +70,7 @@ const Navbar = () => {
           <li>
             <div className="nav-item">
               <button className="nav-dropbtn">
-                <NavLink to="/material/prep-mat" className="nav-links" onClick={handleClick}>
+                <NavLink to="/material" className="nav-links" onClick={handleClick}>
                   Material <i className="fa fa-angle-down" aria-hidden="true"></i>
                 </NavLink>
               </button>
