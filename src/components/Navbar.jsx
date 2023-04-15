@@ -13,97 +13,109 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar">
-          <div className="nav-phone">
-            <div className="nav-logo">
-              <NavLink to="/" className="logo-image" onClick={() => window.scrollTo(0, 0)}>
-                <img src={Logo} alt="logo" />
-              </NavLink>
-            </div>
-            <div className="nav-icon" onClick={handleClick}>
-              <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
-            </div>
-
+        <div className="nav-phone">
+          <div className="nav-logo">
+            <NavLink to="/" className="logo-image" onClick={() => window.scrollTo(0, 0)}>
+              <img src={Logo} alt="logo" />
+            </NavLink>
+          </div>
+          <div className="nav-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
           </div>
 
+        </div>
 
-          <ul className={click ? "nav-menu nav-menu-active" : "nav-menu"}>
-            <li className="nav-item">
-              <NavLink to="/" className="nav-links" onClick={handleClick}  >
-                Home
-              </NavLink>
-            </li>
 
-            <li className="nav-item">
-              <NavLink to="/about" className="nav-links" onClick={handleClick} >
-                About
-              </NavLink>
-            </li>
+        <ul className={click ? "nav-menu nav-menu-active" : "nav-menu"}>
+          <li className="nav-item">
+            <NavLink to="/" className="nav-links" onClick={handleClick}  >
+              Home
+            </NavLink>
+          </li>
 
-            <li className="">
-              <div className="nav-item">
-                <button className="nav-dropbtn">
-                  <NavLink to="/team" className="nav-links" onClick={handleClick}>
-                    Team <i className="fa fa-angle-down" aria-hidden="true"></i>
-                  </NavLink>
-                </button>
-                <div className="dropdown-content">
-                  <NavLink to="/team" className="drop-nav-links" onClick={handleClick}>
-                    Current Team
-                  </NavLink>
+          <li className="nav-item">
+            <NavLink to="/about" className="nav-links" onClick={handleClick} >
+              About
+            </NavLink>
+          </li>
 
-                  <NavLink to="/team/past-team" className="drop-nav-links" onClick={handleClick}>
-                    Past Secretaries
-                  </NavLink>
+          <li className="">
+            <div className="nav-item">
+              <button className="nav-dropbtn">
+                <NavLink to="/team" className="nav-links" onClick={handleClick}>
+                  Team <i className="fa fa-angle-down" aria-hidden="true"></i>
+                </NavLink>
+              </button>
+              <div className="dropdown-content">
+                <NavLink to="/team" className="drop-nav-links" onClick={handleClick}>
+                  Current Team
+                </NavLink>
 
-                </div>
+                <NavLink to="/team/past-team" className="drop-nav-links" onClick={handleClick}>
+                  Past Secretaries
+                </NavLink>
+
               </div>
-            </li>
+            </div>
+          </li>
 
-            <li className="nav-item">
-              <NavLink
-                to="/events" className="nav-links" onClick={handleClick} >
-                Events
-              </NavLink>
-            </li>
+          <li className="nav-item">
+            <NavLink
+              to="/events" className="nav-links" onClick={handleClick} >
+              Events
+            </NavLink>
+          </li>
 
 
-            <li>
-              <div className="nav-item">
-                <button className="nav-dropbtn">
-                  <NavLink to="/material/blogs" className="nav-links" onClick={handleClick}>
-                    Material <i className="fa fa-angle-down" aria-hidden="true"></i>
-                  </NavLink>
-                </button>
-                <div className="dropdown-content">
-                  <NavLink to="/material/blogs" className="drop-nav-links" onClick={handleClick} >
-                    Blogs
-                  </NavLink>
+          <li>
+            <div className="nav-item">
+              <button className="nav-dropbtn">
+                <NavLink to="/material/prep-mat" className="nav-links" onClick={handleClick}>
+                  Material <i className="fa fa-angle-down" aria-hidden="true"></i>
+                </NavLink>
+              </button>
+              <div className="dropdown-content">
+                <NavLink to="/material/prep-mat" className="drop-nav-links" onClick={handleClick} >
+                PrepMat
+                </NavLink>
+                <NavLink to="/material/blogs" className="drop-nav-links" onClick={handleClick} >
+                  Blogs
+                </NavLink>
 
-                  <NavLink to="/material/placement-talks" className="drop-nav-links" onClick={handleClick}>
-                    Placement Talks Videos
-                  </NavLink>
+                <NavLink to="/material/placement-talks" className="drop-nav-links" onClick={handleClick}>
+                  Placement Talks Videos
+                </NavLink>
 
-                </div>
               </div>
-            </li>
+            </div>
+          </li>
 
 
 
-            <li className="nav-item">
-              <NavLink to="/clubs" className="nav-links" onClick={handleClick} >
-                Clubs
-              </NavLink>
-            </li>
+          <li className="nav-item">
+            <NavLink to="/clubs" className="nav-links" onClick={handleClick} >
+              Clubs
+            </NavLink>
+          </li>
 
-            <li className="nav-item">
-              <NavLink to="/contact" className="nav-links" onClick={handleClick} >
-                Contact Us
-              </NavLink>
-            </li>
+          <li className="nav-item">
+            <NavLink to="/contact" className="nav-links" onClick={handleClick} >
+              Contact Us
+            </NavLink>
+          </li>
 
-          </ul>
 
-        
+              <li className="nav-item">
+                <button className="login-btn">Log In</button>
+              </li>
+
+
+
+          
+
+        </ul>
+
+
 
       </div>
     </>

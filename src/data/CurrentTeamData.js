@@ -4,7 +4,7 @@ export const TeamData = [
         "name": "Dhvani Shah",
         "position": "Secretary",
         "bio": "Dhvani Shah is a Final-year Undergraduate student in the Department of Mechanical Engineering. She leads the PDC and CDS student teams responsible for fetching placement and internship opportunities for students and preparing students for their respective careers. Since her first year, she has actively worked in the CDS Team and PDC Council.",
-        "image": "https://i.ibb.co/JC4skS0/team-animate.jpg",
+        "image": "https://www.9degreedesignstudio.com/wp-content/uploads/2020/09/team4.jpg",
         "email":"example@iitgn.ac.in" 
       },
       {
@@ -12,7 +12,7 @@ export const TeamData = [
         "name": "Dhairya Shah",
         "position": "Career Preparation Coordinator",
         "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facilis neque amet incidunt quidem nisi ullam tempore sapiente aspernatur! Amet vel delectus quam, tempora nesciunt voluptas veritatis molestias facere. Assumenda!",
-        "image": "https://i.ibb.co/JC4skS0/team-animate.jpg",
+        "image": "https://mosaictherapy.com/wp-content/uploads/2022/09/MattFiler-10.jpg",
         "email":"example@iitgn.ac.in" 
       },
       {
@@ -20,7 +20,7 @@ export const TeamData = [
         "name": "Inderjeet Bhullar",
         "position": "Events Coordinator",
         "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facilis neque amet incidunt quidem nisi ullam tempore sapiente aspernatur! Amet vel delectus quam, tempora nesciunt voluptas veritatis molestias facere. Assumenda!",
-        "image": "https://i.ibb.co/JC4skS0/team-animate.jpg",
+        "image": "https://mosaictherapy.com/wp-content/uploads/2022/09/MattFiler-10.jpg",
         "email":"example@iitgn.ac.in" 
       },
       {
@@ -28,7 +28,7 @@ export const TeamData = [
         "name": "Shreya Shukla",
         "position": "General Members",
         "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facilis neque amet incidunt quidem nisi ullam tempore sapiente aspernatur! Amet vel delectus quam, tempora nesciunt voluptas veritatis molestias facere. Assumenda!",
-        "image": "https://i.ibb.co/JC4skS0/team-animate.jpg",
+        "image": "https://www.9degreedesignstudio.com/wp-content/uploads/2020/09/team4.jpg",
         "email":"example@iitgn.ac.in" 
       },
       {
@@ -36,7 +36,7 @@ export const TeamData = [
         "name": "Sankarshan",
         "position": "General Members",
         "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facilis neque amet incidunt quidem nisi ullam tempore sapiente aspernatur! Amet vel delectus quam, tempora nesciunt voluptas veritatis molestias facere. Assumenda!",
-        "image": "https://i.ibb.co/JC4skS0/team-animate.jpg",
+        "image": "https://mosaictherapy.com/wp-content/uploads/2022/09/MattFiler-10.jpg",
         "email":"example@iitgn.ac.in" 
       },
       {
@@ -44,7 +44,7 @@ export const TeamData = [
         "name": "Keval Patadia",
         "position": "General Members",
         "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facilis neque amet incidunt quidem nisi ullam tempore sapiente aspernatur! Amet vel delectus quam, tempora nesciunt voluptas veritatis molestias facere. Assumenda!",
-        "image": "https://i.ibb.co/JC4skS0/team-animate.jpg",
+        "image": "https://mosaictherapy.com/wp-content/uploads/2022/09/MattFiler-10.jpg",
         "email":"example@iitgn.ac.in" 
       },
       {
@@ -52,7 +52,7 @@ export const TeamData = [
         "name": "Ashutosh Krishna Amaram",
         "position": "General Members",
         "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facilis neque amet incidunt quidem nisi ullam tempore sapiente aspernatur! Amet vel delectus quam, tempora nesciunt voluptas veritatis molestias facere. Assumenda!",
-        "image": "https://i.ibb.co/JC4skS0/team-animate.jpg",
+        "image": "https://mosaictherapy.com/wp-content/uploads/2022/09/MattFiler-10.jpg",
         "email":"example@iitgn.ac.in" 
       },
       {
@@ -60,7 +60,7 @@ export const TeamData = [
         "name": "Vikalp Agrawal",
         "position": "General Members",
         "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facilis neque amet incidunt quidem nisi ullam tempore sapiente aspernatur! Amet vel delectus quam, tempora nesciunt voluptas veritatis molestias facere. Assumenda!",
-        "image": "https://i.ibb.co/JC4skS0/team-animate.jpg",
+        "image": "https://mosaictherapy.com/wp-content/uploads/2022/09/MattFiler-10.jpg",
         "email":"example@iitgn.ac.in" 
       },
       {
@@ -68,7 +68,7 @@ export const TeamData = [
         "name": "Balgopal Moharana",
         "position": "General Members",
         "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facilis neque amet incidunt quidem nisi ullam tempore sapiente aspernatur! Amet vel delectus quam, tempora nesciunt voluptas veritatis molestias facere. Assumenda!",
-        "image": "https://i.ibb.co/JC4skS0/team-animate.jpg",
+        "image": "https://mosaictherapy.com/wp-content/uploads/2022/09/MattFiler-10.jpg",
         "email":"example@iitgn.ac.in" 
       },
       {
@@ -76,7 +76,7 @@ export const TeamData = [
         "name": "Tanisha Muley",
         "position": "General Members",
         "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facilis neque amet incidunt quidem nisi ullam tempore sapiente aspernatur! Amet vel delectus quam, tempora nesciunt voluptas veritatis molestias facere. Assumenda!",
-        "image": "https://i.ibb.co/JC4skS0/team-animate.jpg",
+        "image": "https://www.9degreedesignstudio.com/wp-content/uploads/2020/09/team4.jpg",
         "email":"example@iitgn.ac.in" 
       },
       {
@@ -84,7 +84,7 @@ export const TeamData = [
         "name": "Vinit",
         "position": "General Members",
         "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facilis neque amet incidunt quidem nisi ullam tempore sapiente aspernatur! Amet vel delectus quam, tempora nesciunt voluptas veritatis molestias facere. Assumenda!",
-        "image": "https://i.ibb.co/JC4skS0/team-animate.jpg",
+        "image": "https://mosaictherapy.com/wp-content/uploads/2022/09/MattFiler-10.jpg",
         "email":"example@iitgn.ac.in" 
       },
       {
@@ -92,7 +92,7 @@ export const TeamData = [
         "name": "Smit Mehta",
         "position": "General Members",
         "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facilis neque amet incidunt quidem nisi ullam tempore sapiente aspernatur! Amet vel delectus quam, tempora nesciunt voluptas veritatis molestias facere. Assumenda!",
-        "image": "https://i.ibb.co/JC4skS0/team-animate.jpg",
+        "image": "https://mosaictherapy.com/wp-content/uploads/2022/09/MattFiler-10.jpg",
         "email":"example@iitgn.ac.in" 
       },
       {
@@ -100,7 +100,7 @@ export const TeamData = [
         "name": "Kunal Satpute",
         "position": "General Members",
         "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facilis neque amet incidunt quidem nisi ullam tempore sapiente aspernatur! Amet vel delectus quam, tempora nesciunt voluptas veritatis molestias facere. Assumenda!",
-        "image": "https://i.ibb.co/JC4skS0/team-animate.jpg",
+        "image": "https://mosaictherapy.com/wp-content/uploads/2022/09/MattFiler-10.jpg",
         "email":"example@iitgn.ac.in" 
       },
       {
@@ -108,7 +108,7 @@ export const TeamData = [
         "name": "Shubh Singhal",
         "position": "General Members",
         "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facilis neque amet incidunt quidem nisi ullam tempore sapiente aspernatur! Amet vel delectus quam, tempora nesciunt voluptas veritatis molestias facere. Assumenda!",
-        "image": "https://i.ibb.co/JC4skS0/team-animate.jpg",
+        "image": "https://mosaictherapy.com/wp-content/uploads/2022/09/MattFiler-10.jpg",
         "email":"example@iitgn.ac.in" 
       },
     ]

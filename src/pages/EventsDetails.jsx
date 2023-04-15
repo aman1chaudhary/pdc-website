@@ -37,9 +37,11 @@ const EventsDetails = () => {
                                     </div>
 
                                     <div className="para-contaent">
+                                    <p>Event Date: {Event.date}</p>
                                         <p>{Event.description}</p>
-                                        <p>Date: {Event.date}</p>
+                                        
                                     </div>
+                                    
 
 
                                 </div>

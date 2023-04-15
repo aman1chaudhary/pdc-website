@@ -37,6 +37,7 @@ const BlogsDetails = () => {
 
                             <div className="para-contaent">
                                 <p>Published Date: {Blog.date}</p>
+                                <p>Author: {Blog.author}</p>
                                 <p>{Blog.content}</p>
                             </div>
 

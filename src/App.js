@@ -15,6 +15,7 @@ import PlacementTalksVideos from './pages/PlacementTalksVideos';
 import Blogs from './pages/Blogs';
 import EventsDetails from './pages/EventsDetails';
 import BlogsDetails from './pages/BlogsDetails';
+import PrepMat from './pages/PrepMat';
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/material/blogs" element={<Blogs />} />  
         <Route path="/events/:EventName" element={<EventsDetails />} />   
         <Route path="/material/blogs/:BlogTitle" element={<BlogsDetails />} />   
+        <Route path="/material/prep-mat" element={<PrepMat />} />   
         </Routes>
       <Footer />
     </Router>

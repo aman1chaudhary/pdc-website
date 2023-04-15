@@ -36,7 +36,7 @@ const PastTeam = () => {
                     </div>
                     <div className="info">
                       <span className="message">
-                      <a href={`mailto:${item.email}`}><i className="fas fa-envelope-open"></i></a>
+                      <a href={item.linkedin} target="_blank" rel="noreferrer"><i class="fa fa-linkedin"></i></a>
                       </span>
                       <h4>{item.name}</h4>
                       <span>{item.year}</span>
