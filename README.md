@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# Professional Development Council Website
+![pdc](https://user-images.githubusercontent.com/76461801/232340354-bad65711-85ac-4bcc-9a98-a117bb0df2f9.jpg)
+# Features:
+1. Fully Responsive:
+2. User Authentication
+3. Access to Prep Material and Placement Talks Videos: After authentication, users can access prep material and placement talks videos, which are stored on the website and can be easily accessed by authenticated users.
+4. Dynamic Announcement Section: The website includes a dynamic announcement section that is linked with a spreadsheet. Any announcements or events entered into the spreadsheet are automatically updated on the website, providing an easy and convenient way to manage announcements.
+5. All the data is in JSON format.
+6. PrepMAT year-wise filtering with dropdown.
+7. Contact Us Form Data Collection: The website includes a contact us form, and the data submitted through the form is collected and stored in a spreadsheet for later reference and communication purposes.
+8. Subscribe Form in Footer: The website includes a subscribe form in the footer, allowing users to subscribe to receive the latest updates, announcements, and blogs from the website.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Development Resources
+1. Bootstrap, HTML5, CSS 
+2. Raect JS
+3. Node JS
+4. Libraries Used: AOS, react-helmet, @react-oauth/google, papaparse, axios, gh-pages
+5. Google Cloud Console

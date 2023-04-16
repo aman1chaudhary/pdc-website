@@ -56,6 +56,12 @@ const Navbar = () => {
 
   return (
     <>
+      {!profile && (
+        <div className="short-nav">
+          <p>Please Login with IITGN mail id to access the PrepMAT and Placement Talks Videos</p>
+        </div>
+      )}
+
       <div className="navbar">
         <div className="nav-phone">
           <div className="nav-logo">
@@ -130,7 +136,7 @@ const Navbar = () => {
                   <NavLink to="/material/prep-mat" className="drop-nav-links" onClick={handleClick} >
                     PrepMat
                   </NavLink>
-                
+
                   <NavLink to="/material/placement-talks" className="drop-nav-links" onClick={handleClick}>
                     Placement Talks Videos
                   </NavLink>
