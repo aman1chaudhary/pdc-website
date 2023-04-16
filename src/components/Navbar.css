@@ -80,11 +80,16 @@ font-family: 'Work Sans', sans-serif;
   
   }
   .login-btn{
-    background-color: rgb(251, 122, 0);
     border: none;
     padding: 0px 10px;
     color: white;
+    background: #f4a046;
+  background: linear-gradient(to bottom, #f8a44a, #d66e06);
     
+  }
+  .login-btn:hover{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+  
   }
 .profile-img img{
   width: 35px;
@@ -257,7 +262,6 @@ font-family: 'Work Sans', sans-serif;
       position: relative;
       margin: 0px;
       padding: 0px;
-      right: 0px;
       box-shadow: none;
     }
   

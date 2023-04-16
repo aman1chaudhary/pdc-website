@@ -43,6 +43,11 @@ const Clubs = () => {
 
                     
                     <p>{item.description}</p>
+                    <div className="card-lg-container-btn">
+                    <Link to={`/club/${item.ClubName}`} onClick={() => window.scrollTo(0, 0)}><button className="card-lg-btn">Read More </button></Link>
+
+                    </div>
+                    
 
                   </div>
                 </div>

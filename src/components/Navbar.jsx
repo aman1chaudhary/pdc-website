@@ -162,6 +162,7 @@ const Navbar = () => {
                 <div className="profile-data">
                   <p>Name: {profile.name}</p>
                   <p>Email: {profile.email}</p>
+                  <p><button className="login-btn" onClick={logOut} >Logout</button></p>
 
 
                 </div>

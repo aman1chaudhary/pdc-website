@@ -238,18 +238,17 @@ font-size: 18px;
 
 .submit-button {
   padding: 10px 15px;
-  color: #000000;
-  background-color: white;
   font-size: 16px;
+  border: none;
   margin-bottom: 10px;
-  border: 2px solid rgb(58, 141, 235);
-  border-radius: 0.25rem;
-  transition: 0.3s;
+  background: #56ccf2;
+  background: linear-gradient(to bottom, #2f80ed, #56ccf2);
+  color: #fafafa;
+
 }
 
 .submit-button:hover {
-  background-color: rgb(58, 141, 235);
-  color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
 
@@ -280,6 +279,11 @@ font-size: 18px;
   margin-bottom: 30px;
 
 }
+.section-button:hover{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+
+}
+
 
 
 
@@ -304,6 +308,9 @@ font-size: 18px;
   font-size: 22px;
   text-align: center;
 }
+.card-item-content p:hover {
+color: #005689;
+}
 
 .card-item:hover .card-item-img img {
   transform: scale(1.1);
@@ -320,6 +327,26 @@ font-size: 18px;
 
 .card-lg-container-img img {
   width: 100%;
+}
+
+.card-lg-container-btn{
+  text-align: right;
+
+}
+.card-lg-btn{
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  margin: 5px 5px 5px 0px;
+  background: #56ccf2;
+  background: linear-gradient(to bottom, #2f80ed, #56ccf2);
+  color: #fafafa;
+
+}
+.card-lg-btn:hover{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+
+
 }
 
 .placement-talks {
@@ -412,6 +439,10 @@ font-size: 18px;
   background: linear-gradient(to bottom, #f8a44a, #d66e06);
   color: white;
 
+}
+.read-button:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 .announcements-btn {
   text-align: right;
