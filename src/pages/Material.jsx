@@ -13,9 +13,6 @@ const Material = () => {
             <div className="page-container">
                 <div className="card-container">
                     <div className="row">
-
-
-
                         <div className='col-md-4'>
                             <div className="card-item" data-aos="fade-up">
                                 <div className="card-item-img">

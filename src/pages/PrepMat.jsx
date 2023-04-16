@@ -55,11 +55,9 @@ const PrepMat = () => {
                 </div>
 
                 <div className="pagination-section">
-                    <ul className='news-pagination'>
+                    <div className='news-pagination'>
                         {[...Array(Math.ceil(filteredArticles.length / dataPerPage))].map((_, i) => (
-                            <li
-                                key={i}
-                            >
+                            <div key={i} >
                                 <button
                                     className='news-pagination-btn'
                                     onClick={() => {
@@ -69,9 +67,9 @@ const PrepMat = () => {
                                 >
                                     {i + 1}
                                 </button>
-                            </li>
+                            </div>
                         ))}
-                    </ul>
+                    </div>
 
                 </div>
 
