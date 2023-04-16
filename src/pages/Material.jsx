@@ -1,8 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet';
 const Material = () => {
     return (
         <div>
+            <Helmet>
+                <title>Preparation Materila</title>
+                <meta name="description" content="" />
+
+            </Helmet>
             <header id="page-header">
                 <div className="page-heading">
                     <h2>Material</h2>
@@ -13,18 +19,7 @@ const Material = () => {
             <div className="page-container">
                 <div className="card-container">
                     <div className="row">
-                        <div className='col-md-4'>
-                            <div className="card-item" data-aos="fade-up">
-                                <div className="card-item-img">
-                                    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" alt='item' />
-                                </div>
-                                <div className="card-item-content">
-                                    <Link to="/material/blogs" onClick={() => window.scrollTo(0, 0)}>
-                                        <p>Blog</p></Link>
-                                </div>
-                            </div>
-                        </div>
-
+                    
                         <div className='col-md-4'>
                             <div className="card-item" data-aos="fade-up">
                             <div className="card-item-img">

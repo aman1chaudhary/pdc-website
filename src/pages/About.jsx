@@ -2,6 +2,7 @@ import React,{useEffect} from "react";
 import IITGNImg from "../assets/images/banner.jpg"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Helmet } from 'react-helmet';
 
 const About = () => {
   useEffect(() => {
@@ -9,6 +10,11 @@ const About = () => {
   }, [])
   return (
     <div>
+      <Helmet>
+        <title>About Us</title>
+        <meta name="description" content="" />
+
+      </Helmet>
       <header id="page-header">
         <div className="page-heading">
           <h2>About</h2>

@@ -2,6 +2,7 @@ import React,{useEffect} from "react";
 import { TeamData } from '../data/CurrentTeamData'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Helmet } from 'react-helmet';
 
 const Team = () => {
   useEffect(() => {
@@ -9,6 +10,11 @@ const Team = () => {
   }, [])
   return (
     <div>
+      <Helmet>
+                <title>Team | Current Team</title>
+                <meta name="description" content="" />
+
+            </Helmet>
       <header id="page-header">
         <div className="page-heading">
           <h2>Team</h2>

@@ -1,6 +1,7 @@
 import React,{useEffect} from "react";
 import { PastTeamData } from "../data/PastTeamData";
 import AOS from 'aos';
+import { Helmet } from 'react-helmet';
 import 'aos/dist/aos.css';
 
 const PastTeam = () => {
@@ -9,6 +10,11 @@ const PastTeam = () => {
   }, [])
   return (
     <div>
+      <Helmet>
+                <title>Team | Past Team</title>
+                <meta name="description" content="" />
+
+            </Helmet>
         <header id="page-header">
         <div className="page-heading">
           <h2>Past Secretaries</h2>

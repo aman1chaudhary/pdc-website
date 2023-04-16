@@ -1,9 +1,15 @@
 import React from 'react'
 import ContactForm from '../components/ContactForm'
+import { Helmet } from 'react-helmet';
 
 const Contact = () => {
   return (
     <div>
+      <Helmet>
+                <title>Contact Us</title>
+                <meta name="description" content="" />
+
+            </Helmet>
       <header id="page-header">
         <div className="page-heading">
           <h2>Contact Us</h2>

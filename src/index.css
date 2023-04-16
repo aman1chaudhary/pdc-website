@@ -274,6 +274,10 @@ font-size: 18px;
   border: none;
   padding: 10px 5px;
   font-size: 14px;
+  background: #f4a046;
+  background: linear-gradient(to bottom, #f8a44a, #d66e06);
+  color: white;
+  margin-bottom: 30px;
 
 }
 
@@ -375,31 +379,28 @@ font-size: 18px;
 
 
 
-.news-pagination{
-  display: flex;
-  margin: auto;
-}
+
 .pagination-section{
-  text-align: center;
   margin-top: 20px;
+  display: flex;
+  text-align: center;
 }
-.news-pagination-btn{
+.pagination-btn-container{
+  text-align: center;
+
+}
+.pagination-btn{
   margin-right: 5px;
   padding: 10px 15px;
   text-align: center;
   border: none;
-  border:2px solid orange;
-  /* background-color: ; */
+  background: #56ccf2;
+  background: linear-gradient(to bottom, #2f80ed, #56ccf2);
   border-radius: 5px;
-  background-color: white;
   transition: 0.3s;
   font-size: 14px;
-
-}
-.news-pagination-btn:hover{
-  cursor: pointer;
-  background-color:orange;
   color: white;
+
 }
 .recent-update-item-img img{
   width: 100%;
@@ -407,6 +408,9 @@ font-size: 18px;
 .read-button{
   border: none;
   padding: 10px;
+  background: #f4a046;
+  background: linear-gradient(to bottom, #f8a44a, #d66e06);
+  color: white;
 
 }
 .announcements-btn {

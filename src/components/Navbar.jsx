@@ -110,6 +110,13 @@ const Navbar = () => {
             </NavLink>
           </li>
 
+          <li className="nav-item">
+            <NavLink
+              to="/blogs" className="nav-links" onClick={handleClick} >
+              Blogs
+            </NavLink>
+          </li>
+
 
           {profile && (
             <li>
@@ -123,10 +130,7 @@ const Navbar = () => {
                   <NavLink to="/material/prep-mat" className="drop-nav-links" onClick={handleClick} >
                     PrepMat
                   </NavLink>
-                  <NavLink to="/material/blogs" className="drop-nav-links" onClick={handleClick} >
-                    Blogs
-                  </NavLink>
-
+                
                   <NavLink to="/material/placement-talks" className="drop-nav-links" onClick={handleClick}>
                     Placement Talks Videos
                   </NavLink>
@@ -154,7 +158,7 @@ const Navbar = () => {
           <li className="nav-item">
             {profile ? (
               <div className='profile-img'>
-                <img src={profile.picture} alt="user image" onClick={logOut} />
+                <img src={profile.picture} alt="user profile" onClick={logOut} />
                 <div className="profile-data">
                   <p>Name: {profile.name}</p>
                   <p>Email: {profile.email}</p>

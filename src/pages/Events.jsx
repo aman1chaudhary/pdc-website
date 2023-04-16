@@ -3,6 +3,7 @@ import { EventsData } from '../data/EventsData'
 import { Link } from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Helmet } from 'react-helmet';
 
 const Events = () => {
   useEffect(() => {
@@ -10,6 +11,11 @@ const Events = () => {
 }, [])
   return (
     <div>
+      <Helmet>
+                <title>Events</title>
+                <meta name="description" content="" />
+
+            </Helmet>
       <header id="page-header">
         <div className="page-heading">
           <h2>Events</h2>

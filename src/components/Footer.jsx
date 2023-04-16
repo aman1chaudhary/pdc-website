@@ -41,8 +41,8 @@ const Footer = () => {
                     <li><Link to="/" onClick={() => window.scrollTo(0, 0)}>Home</Link></li>
                     <li><Link to="/about" onClick={() => window.scrollTo(0, 0)}>About Us</Link></li>
                     <li><Link to="/events" onClick={() => window.scrollTo(0, 0)}>Events</Link></li>
-                    <li><Link to="/material/placement-talks" onClick={() => window.scrollTo(0, 0)}>Placement Talks Videos</Link></li>
-                    <li><Link to="/material/blogs" onClick={() => window.scrollTo(0, 0)}>Blogs</Link></li>
+                    {/* <li><Link to="/material/placement-talks" onClick={() => window.scrollTo(0, 0)}>Placement Talks Videos</Link></li> */}
+                    <li><Link to="/blogs" onClick={() => window.scrollTo(0, 0)}>Blogs</Link></li>
                     <li><Link to="/clubs" onClick={() => window.scrollTo(0, 0)}>Clubs</Link></li>
                     <li><Link to="/team" onClick={() => window.scrollTo(0, 0)}>Our Team</Link></li>
                     <li><Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Contact us</Link></li>

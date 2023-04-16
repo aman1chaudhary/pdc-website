@@ -2,12 +2,18 @@ import React, { useEffect } from "react";
 import { PlacementTalksVideosData } from '../data/PlacementTalksVideosData'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Helmet } from 'react-helmet';
 const PlacementTalksVideos = () => {
     useEffect(() => {
         AOS.init();
     }, [])
     return (
         <div>
+            <Helmet>
+                <title>Placement Talks Video</title>
+                <meta name="description" content="" />
+
+            </Helmet>
             <header id="page-header">
                 <div className="page-heading">
                     <h2>Placement Talks Videos</h2>

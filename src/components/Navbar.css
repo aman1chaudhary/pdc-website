@@ -225,6 +225,41 @@ font-family: 'Work Sans', sans-serif;
     .logo-image img {
       width: 50px;
     }
+
+
+    .profile-img{
+      width: 100%;
+      display: flex;
+      margin: 0px;
+      height: 100%;
+      /* background-color: antiquewhite; */
+      align-items: center;
+    }
+    .profile-img p{
+      margin: 0;
+    }
+    .profile-img img{
+      width: 35px;
+      height: 35px;
+      margin: 0.5rem 1rem;
+      cursor: pointer;
+    }
+    .login-btn{
+      background-color: rgb(251, 122, 0);
+      border: none;
+      margin: 0.5rem 1rem;
+      color: white;
+      
+    }
+
+    .profile-data{
+      display: block;
+      position: relative;
+      margin: 0px;
+      padding: 0px;
+      right: 0px;
+      box-shadow: none;
+    }
   
   
   

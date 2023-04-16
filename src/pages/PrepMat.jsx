@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { PrepMatData } from '../data/PrepMatData'
+import { Helmet } from 'react-helmet';
 
 const PrepMat = () => {
     const [yearFilter, setYearFilter] = useState('All');
@@ -20,6 +21,11 @@ const PrepMat = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>PrepMat</title>
+                <meta name="description" content="" />
+
+            </Helmet>
             <header id="page-header">
                 <div className="page-heading">
                     <h2>PrepMat</h2>
@@ -55,11 +61,11 @@ const PrepMat = () => {
                 </div>
 
                 <div className="pagination-section">
-                    <div className='news-pagination'>
+
                         {[...Array(Math.ceil(filteredArticles.length / dataPerPage))].map((_, i) => (
-                            <div key={i} >
+                            <div key={i} className='pagination-btn-container'>
                                 <button
-                                    className='news-pagination-btn'
+                                    className='pagination-btn'
                                     onClick={() => {
                                         paginate(i + 1);
                                         window.scrollTo(0, 0);
@@ -69,7 +75,7 @@ const PrepMat = () => {
                                 </button>
                             </div>
                         ))}
-                    </div>
+
 
                 </div>
 

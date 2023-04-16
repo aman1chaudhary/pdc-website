@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import { ClubsData } from "../data/ClubsData";
 import AOS from 'aos';
+import { Helmet } from 'react-helmet';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom'
 
 const Clubs = () => {
   useEffect(() => {
@@ -9,6 +11,11 @@ const Clubs = () => {
   }, [])
   return (
     <div>
+      <Helmet>
+                <title>Clubs</title>
+                <meta name="description" content="" />
+
+            </Helmet>
       <header id="page-header">
         <div className="page-heading">
           <h2>Clubs and Focused Groups</h2>
@@ -32,7 +39,9 @@ const Clubs = () => {
                 </div>
                 <div className="col-md-8">
                   <div className="card-lg-container-content">
-                    <h3>{item.name}</h3>
+                  <Link to={`/club/${item.ClubName}`} onClick={() => window.scrollTo(0, 0)}><h3>{item.ClubName}</h3></Link>
+
+                    
                     <p>{item.description}</p>
 
                   </div>
