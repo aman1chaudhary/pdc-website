@@ -9,7 +9,7 @@ const Home = () => {
     <div className='main-container'>
       <Helmet>
         <title>PDC | IIT Gandhinagar</title>
-        <meta name="description" content="" />
+        <meta name="description" content="Professional Development Council (PDC) is dedicated to providing the student body with a structured framework for their overall professional development. We aim to spread awareness about the importance of professional development and create avenues for students to enhance their skills and knowledge in various areas." />
 
       </Helmet>
 

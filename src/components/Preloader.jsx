@@ -1,12 +1,11 @@
 import React from 'react'
 
 const Preloader = () => {
-  return (
-    <div>
-
-      
-    </div>
-  )
-}
+    return (
+      <div className="preloader">
+       <span className="loader"></span>
+      </div>
+    );
+  }
 
 export default Preloader
