@@ -1,5 +1,5 @@
 # Professional Development Council Website
-![pdc](https://user-images.githubusercontent.com/76461801/232340354-bad65711-85ac-4bcc-9a98-a117bb0df2f9.jpg)
+
 # Features:
 1. Fully Responsive:
 2. User Authentication

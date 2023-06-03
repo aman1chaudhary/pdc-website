@@ -29,6 +29,7 @@ const ContactForm = () => {
             <form name="submit-to-google-sheet" className="contact-us-form" data-form onSubmit={handleSubmit}>
                 <input type="text" placeholder="Your Name" className="form-control" name="Name" required />
                 <input type="text" placeholder="Your Email" className="form-control" name="Email" required />
+                <input type="text" placeholder="Subject" className="form-control" name="Subject" required />
 
                 <textarea placeholder="Type your message here..." className="form-control" rows="9" name="Message"
                     required></textarea>

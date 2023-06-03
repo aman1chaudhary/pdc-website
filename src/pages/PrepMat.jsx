@@ -11,7 +11,7 @@ const PrepMat = () => {
     });
 
     const [currentPage, setCurrentPage] = useState(1);
-    const [dataPerPage] = useState(12);
+    const [dataPerPage] = useState(20);
   
     const indexOfLastData = currentPage * dataPerPage;
     const indexOfFirstData = indexOfLastData - dataPerPage;

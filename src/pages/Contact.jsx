@@ -6,10 +6,10 @@ const Contact = () => {
   return (
     <div>
       <Helmet>
-                <title>Contact Us</title>
-                <meta name="description" content="" />
+        <title>Contact Us</title>
+        <meta name="description" content="" />
 
-            </Helmet>
+      </Helmet>
       <header id="page-header">
         <div className="page-heading">
           <h2>Contact Us</h2>
@@ -17,17 +17,23 @@ const Contact = () => {
       </header>
 
       <div className="page-container">
+        <div className="section-heading">
+          <h1>Get in Touch!</h1>
+        </div>
+
         <div className="row">
           <div className="col-md-6 single-item">
             <div className="contact-content">
-            <p>Contact our team for any inquiries, feedback, or partnership opportunities. We are here to answer any questions you may have and provide the necessary support to help you achieve your professional development goals.</p>
+              <p>Contact our team for any inquiries, feedback, or partnership opportunities. We are here to answer any questions you may have and provide the necessary support to help you achieve your professional development goals.</p>
+              <p><strong>Email: </strong><a href='mailto:pdc.secretary@iitgn.ac.in'> pdc.secretary@iitgn.ac.in</a></p>
 
             </div>
-            
-            
+
+
 
           </div>
           <div className="col-md-6 single-item">
+
             <ContactForm />
           </div>
 

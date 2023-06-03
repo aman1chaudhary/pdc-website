@@ -3,7 +3,7 @@ import { googleLogout, useGoogleLogin } from '@react-oauth/google';
 import axios from 'axios';
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import Logo from "../assets/images/logo.png"
+import Logo from "../assets/images/PDC IITGN.png"
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -38,30 +38,29 @@ const Navbar = () => {
           }
         })
         .then((res) => {
-          setProfile(res.data);
-          // Store the profile state in localStorage
-          localStorage.setItem('profile', JSON.stringify(res.data));
+          const email = res.data.email;
+          if (email.endsWith('@iitgn.ac.in')) {
+            setProfile(res.data);
+            localStorage.setItem('profile', JSON.stringify(res.data));
+          } else {
+            alert('Only users with "@iitgn.ac.in" email domain are allowed');
+            googleLogout();
+          }
         })
         .catch((err) => console.log(err));
     }
   }, [user]);
 
+
   const logOut = () => {
     googleLogout();
     setProfile(null);
-    // Remove the profile state from localStorage
     localStorage.removeItem('profile');
   };
 
 
   return (
-    <>
-      {!profile && (
-        <div className="short-nav">
-          <p>Please Login with IITGN mail id to access the PrepMAT and Placement Talks Videos</p>
-        </div>
-      )}
-
+    <div className='nav_container'>
       <div className="navbar">
         <div className="nav-phone">
           <div className="nav-logo">
@@ -89,23 +88,20 @@ const Navbar = () => {
             </NavLink>
           </li>
 
-          <li className="">
-            <div className="nav-item">
-              <button className="nav-dropbtn">
-                <NavLink to="/team" className="nav-links" onClick={handleClick}>
-                  Team <i className="fa fa-angle-down" aria-hidden="true"></i>
-                </NavLink>
-              </button>
-              <div className="dropdown-content">
-                <NavLink to="/team" className="drop-nav-links" onClick={handleClick}>
-                  Current Team
-                </NavLink>
+          <li className="nav-item">
+            <button className="nav-dropbtn">
+              Team <i className="fa fa-angle-down" aria-hidden="true"></i>
+            </button>
 
-                <NavLink to="/team/past-team" className="drop-nav-links" onClick={handleClick}>
-                  Past Secretaries
-                </NavLink>
+            <div className="dropdown-content">
+              <NavLink to="/team" className="drop-nav-links" onClick={handleClick}>
+                Current Team
+              </NavLink>
 
-              </div>
+              <NavLink to="/team/past-team" className="drop-nav-links" onClick={handleClick}>
+                Past Secretaries
+              </NavLink>
+
             </div>
           </li>
 
@@ -123,34 +119,38 @@ const Navbar = () => {
             </NavLink>
           </li>
 
+          <li className="nav-item">
+            <button className="nav-dropbtn">
+              Material <i className="fa fa-angle-down" aria-hidden="true"></i>
+            </button>
 
-          {profile && (
-            <li>
-              <div className="nav-item">
-                <button className="nav-dropbtn">
-                  <NavLink to="/material" className="nav-links" onClick={handleClick}>
-                    Material <i className="fa fa-angle-down" aria-hidden="true"></i>
-                  </NavLink>
-                </button>
-                <div className="dropdown-content">
-                  <NavLink to="/material/prep-mat" className="drop-nav-links" onClick={handleClick} >
-                    PrepMat
-                  </NavLink>
+            <div className="dropdown-content">
+              {profile ? (
+                <NavLink to="/material/prep-mat" className="drop-nav-links" onClick={handleClick} >
+                  PrepMat
+                </NavLink>
+              ) : (
+                <NavLink to="/" className="drop-nav-links" onClick={() => login()} >
+                  PrepMat
+                </NavLink>
+              )}
 
-                  <NavLink to="/material/placement-talks" className="drop-nav-links" onClick={handleClick}>
-                    Placement Talks Videos
-                  </NavLink>
+              {profile ? (
+                <NavLink to="/material/placement-talks" className="drop-nav-links" onClick={handleClick}>
+                  Placement Talks Videos
+                </NavLink>
+              ) : (
+                <NavLink to="/" className="drop-nav-links" onClick={() => login()}>
+                  Placement Talks Videos
+                </NavLink>
+              )}
 
-                </div>
-              </div>
-            </li>
-          )}
-
-
+            </div>
+          </li>
 
           <li className="nav-item">
             <NavLink to="/clubs" className="nav-links" onClick={handleClick} >
-              Clubs
+            Annuity Club
             </NavLink>
           </li>
 
@@ -160,11 +160,10 @@ const Navbar = () => {
             </NavLink>
           </li>
 
-
           <li className="nav-item">
             {profile ? (
               <div className='profile-img'>
-                <img src={profile.picture} alt="user profile" onClick={logOut} />
+                <img src={profile.picture} alt="user profile" />
                 <div className="profile-data">
                   <p>Name: {profile.name}</p>
                   <p>Email: {profile.email}</p>
@@ -173,23 +172,16 @@ const Navbar = () => {
 
                 </div>
 
+                <button className="phone_logout_btn" onClick={logOut} >Logout</button>
               </div>
             ) : (
               <button className="login-btn" onClick={() => login()}>Login In </button>
             )}
           </li>
 
-
-
-
-
-
         </ul>
-
-
-
       </div>
-    </>
+    </div>
 
   )
 }

@@ -46,7 +46,11 @@ const Team = () => {
                     </div>
                     <div className="info">
                       <span className="message">
-                      <a href={`mailto:${item.email}`}><i className="fas fa-envelope-open"></i></a>
+                        {item.email && (
+                          <a href={`mailto:${item.email}`}><i className="fas fa-envelope-open"></i></a>
+
+                        )}
+                      
                       </span>
                       <h4>{item.name}</h4>
                       <span>{item.position}</span>

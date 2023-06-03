@@ -36,7 +36,10 @@ const ClubsDetails = () => {
                             </div>
 
                             <div className="para-contaent">
-                                <p>{Club.description}</p>
+                                <p>{Club.Para1}</p>
+                            </div>
+                            <div className="para-contaent">
+                                <p>{Club.Para2}</p>
                             </div>
 
 

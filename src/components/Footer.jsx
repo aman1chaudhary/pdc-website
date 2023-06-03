@@ -9,30 +9,25 @@ const Footer = () => {
       <footer className="footer-section">
         <div className="container">
           <div className="footer-cta pt-5 ">
-            
+
           </div>
           <div className="footer-content pt-5 pb-1">
             <div className="row">
               <div className="col-xl-4 col-lg-4 mb-50">
                 <div className="footer-widget">
                   <div className="footer-logo">
-                    <a href="index.html"><img src={logo} className="img-fluid" alt="logo" /></a>
+                    <img src={logo} className="img-fluid" alt="logo" />
                   </div>
                   <div className="footer-text">
                     <p>The Professional Development Council (PDC) is dedicated to providing the student body with a structured framework for their overall professional development. We aim to spread awareness about the importance of professional development and create avenues for students to enhance their skills and knowledge in various areas. </p>
                   </div>
-                  <div className="footer-social-icon">
-                    <span>Follow us</span>
-                    <ul className="social_icon">
-                      <li><a href="https://www.instagram.com/"><i className="fab fa-instagram"></i></a></li>
-                      <li><a href="https://www.instagram.com/"><i className="fab fa-twitter"></i></a></li>
-                      <li><a href="https://www.instagram.com/"><i className="fab fa-youtube"></i></a></li>
-                      <li><a href="https://www.instagram.com/"><i className="fab fa-linkedin"></i></a></li>
-                    </ul>
-                  </div>
+
                 </div>
               </div>
-              <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div className="col-xl-2 col-lg-4 mb-50">
+
+              </div>
+              <div className="col-xl-6 col-lg-4 col-md-6 mb-30">
                 <div className="footer-widget">
                   <div className="footer-widget-heading">
                     <h3>Useful Links</h3>
@@ -49,22 +44,21 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-xl-4 col-lg-4 col-md-6 mb-50">
-                <div className="footer-widget">
+              {/* <div className="col-xl-4 col-lg-4 col-md-6 mb-50">
+                <div className="footer-social-icon">
                   <div className="footer-widget-heading">
-                    <h3>Subscribe</h3>
+                    <h3>Follow us</h3>
                   </div>
-                  <div className="footer-text mb-25">
-                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                  </div>
-                  <div className="subscribe-form">
-                    <form action="#">
-                      <input type="text" placeholder="Email Address" />
-                      <button><i className="fab fa-telegram-plane"></i></button>
-                    </form>
-                  </div>
+                  <ul className="social_icon">
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><i className="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a></li>
+                  </ul>
                 </div>
-              </div>
+
+
+              </div> */}
             </div>
           </div>
         </div>
