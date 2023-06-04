@@ -1,18 +1,39 @@
 {
   "files": {
-    "main.css": "/pdc-website/static/css/main.f71a41bb.css",
-    "main.js": "/pdc-website/static/js/main.1900668f.js",
-    "static/media/IITGN Logo-Trans.png": "/pdc-website/static/media/IITGN Logo-Trans.9c62fff84e29bc293a33.png",
+    "main.css": "/pdc-website/static/css/main.0dcc94fe.css",
+    "main.js": "/pdc-website/static/js/main.9d28f5ad.js",
     "static/media/banner-2.jpg": "/pdc-website/static/media/banner-2.c66edc8a6b8b6b1bd4b3.jpg",
     "static/media/empty.gif": "/pdc-website/static/media/empty.892e3c962daac6591a52.gif",
-    "static/media/logo.png": "/pdc-website/static/media/logo.a0fff9bafa0d43cb1612.png",
+    "static/media/carrer.jpg": "/pdc-website/static/media/carrer.19d4a7b2c36a1a8291b4.jpg",
+    "static/media/IITGN Logo-Trans.png": "/pdc-website/static/media/IITGN Logo-Trans.fe6f9b091faf101633a9.png",
     "static/media/banner.jpg": "/pdc-website/static/media/banner.4d41cdabcae317284099.jpg",
+    "static/media/Ayush Shrivastava.jpg": "/pdc-website/static/media/Ayush Shrivastava.dc0c7d2601b65301120c.jpg",
+    "static/media/PDC IITGN.png": "/pdc-website/static/media/PDC IITGN.6578ee7ca5e07392ed13.png",
+    "static/media/Vidhi Shah.jpg": "/pdc-website/static/media/Vidhi Shah.3c3822ea1a2620a2c153.jpg",
+    "static/media/Shubh Singhal.jpg": "/pdc-website/static/media/Shubh Singhal.5627ba7a824e6fa1e11a.jpg",
+    "static/media/Mumuksh Jain.jpg": "/pdc-website/static/media/Mumuksh Jain.f02c2628cb1c875fe385.jpg",
+    "static/media/Hardeep.jpg": "/pdc-website/static/media/Hardeep.bf8f4d8a25a3a711cdbc.jpg",
+    "static/media/Aadya Arora.jpg": "/pdc-website/static/media/Aadya Arora.c4a92af9c292b07fa354.jpg",
+    "static/media/Yash Bothra.jpg": "/pdc-website/static/media/Yash Bothra.4a72217fb0fc9d7869ba.jpg",
+    "static/media/Aditya Patil.jpg": "/pdc-website/static/media/Aditya Patil.122d3364e80ba4b8b9ee.jpg",
+    "static/media/Kunal Satpute.jpg": "/pdc-website/static/media/Kunal Satpute.c2df8d48b6093eb74569.jpg",
+    "static/media/Ayush Modi.jpg": "/pdc-website/static/media/Ayush Modi.fc4d057f4579fb3ce0d2.jpg",
+    "static/media/Maitreya Thakur.jpg": "/pdc-website/static/media/Maitreya Thakur.e8823b37dde73957aad6.jpg",
+    "static/media/Dhruv Sharma.jpg": "/pdc-website/static/media/Dhruv Sharma.7c080d08e708c6c5fca2.jpg",
+    "static/media/Mohit Mina.jpg": "/pdc-website/static/media/Mohit Mina.b4112a5e954f30512cf2.jpg",
+    "static/media/Siya Shalin Patil.jpg": "/pdc-website/static/media/Siya Shalin Patil.98597a244964efc306a6.jpg",
+    "static/media/Samyak Gosalia.jpg": "/pdc-website/static/media/Samyak Gosalia.797df18b5b599ed7f6de.jpg",
+    "static/media/Yashraj J Deshmukh.jpg": "/pdc-website/static/media/Yashraj J Deshmukh.d5b46c534913b39f16f2.jpg",
+    "static/media/Rutvi Shah.jpg": "/pdc-website/static/media/Rutvi Shah.f72ac3d4d9097227bdfe.jpg",
+    "static/media/Dhvani Shah.jpg": "/pdc-website/static/media/Dhvani Shah.64c26766c2d3088620d7.jpg",
+    "static/media/Dhairya Shah.jpg": "/pdc-website/static/media/Dhairya Shah.6dd4740011933b588e49.jpg",
+    "static/media/Smeet Vora.jpg": "/pdc-website/static/media/Smeet Vora.3ca80b30c226e7e47f0b.jpg",
     "index.html": "/pdc-website/index.html",
-    "main.f71a41bb.css.map": "/pdc-website/static/css/main.f71a41bb.css.map",
-    "main.1900668f.js.map": "/pdc-website/static/js/main.1900668f.js.map"
+    "main.0dcc94fe.css.map": "/pdc-website/static/css/main.0dcc94fe.css.map",
+    "main.9d28f5ad.js.map": "/pdc-website/static/js/main.9d28f5ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.f71a41bb.css",
-    "static/js/main.1900668f.js"
+    "static/css/main.0dcc94fe.css",
+    "static/js/main.9d28f5ad.js"
   ]
 }
